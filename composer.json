@@ -1,0 +1,31 @@
+{
+	"name": "hybridmind/interval_time",
+	"type": "phpbb-extension",
+	"description": "Counting down the time for a post",
+	"homepage": "https://webocean.info",
+	"version": "1.0.0",
+	"time": "2020-07-28",
+    "keywords": [
+        "phpbb",
+        "extension",
+        "interval_time"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "hybridmind",
+			"homepage": "https://webocean.info",
+			"email": "admin@webocean.info",
+			"role": "Web Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Interval Time",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.0,<3.3.*@dev"
+		}
+	}
+}

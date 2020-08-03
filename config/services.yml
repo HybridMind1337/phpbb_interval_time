@@ -1,0 +1,10 @@
+services:
+  hybridmind.interval_time.listener:
+    class: hybridmind\interval_time\event\listener
+    arguments:
+      - '@config'
+      - '@template'
+      - '@user'
+      - '@dbal.conn'
+    tags:
+      - name: event.listener

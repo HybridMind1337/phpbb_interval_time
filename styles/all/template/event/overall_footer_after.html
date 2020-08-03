@@ -1,0 +1,22 @@
+<!-- IF SCRIPT_NAME == 'posting' -->
+<script>
+	cycle_me = setInterval(checker_be, 1000);
+	function checker_be() {
+		$.ajax({  //Make the Ajax Request
+			type: "POST",  
+			dataType: "json",
+			url: "{BOARD_URL}ext/hybridmind/interval_time/checker.php",  //file name
+			data: {user_id: '{USER_ID}'},
+			success: function(data){  
+				my_value = data['my_countdown'];
+				
+				
+				$('.default-submit-action').val('Прати ('+my_value+')');
+				if(data['my_countdown'] == 0 || data['my_countdown'] < 0) {
+					clearInterval(cycle_me);
+				}
+			}  
+		}); 
+	}
+</script>
+<!-- ENDIF -->

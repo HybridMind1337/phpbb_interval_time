@@ -1,0 +1,2 @@
+# phpbb_interval_time
+Repulsive remaining time until new post (calculates flood between shaft). Countdown in real time, works with ajax. It is shown only with a new answer. It is also shown in the administrator (at the beginning), but if it is not present - it is written, you will process it. Administrators ignore the flood limit and there are no such limits. In general, fashion is only for normal users.
